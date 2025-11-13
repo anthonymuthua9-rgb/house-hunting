@@ -1,0 +1,362 @@
+
+/* Login/Register styling */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-content input {
+  margin: 10px;
+  padding: 10px;
+  width: 250px;
+}
+
+.form-content button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+  background: linear-gradient(90deg, #007bff, #00b4d8);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe45c;
+}
+
+.login-btn {
+  background: #ffe45c;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background: white;
+}
+
+/* ========== SEARCH SECTION (HOME PAGE) ========== */
+.search-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  color: white;
+}
+
+.search-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#searchForm {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#searchForm input,
+#searchForm button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+#searchForm input {
+  width: 200px;
+}
+
+#searchForm button {
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#searchForm button:hover {
+  background: #0056b3;
+}
+
+/* ========== FORM CONTAINERS (LOGIN / REGISTER / CONTACT) ========== */
+.form-container {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.form-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-content button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-content button:hover {
+  background: #0056b3;
+}
+
+/* Tabs for login/register */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #e0e0e0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+/* ========== LISTINGS PAGE ========== */
+.listings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 20px;
+}
+
+.house {
+  background: white;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.house:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.house img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.house h3 {
+  padding: 10px;
+  color: #007bff;
+}
+
+.house p {
+  padding: 0 10px 10px;
+  color: #444;
+}
+
+/* ========== CONTACT PAGE ========== */
+.contact-form {
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* ========== HELP & ABOUT PAGES ========== */
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #007bff;
+}
+
+p {
+  text-align: center;
+  margin: 15px 20px;
+  font-size: 1rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer strong {
+  color: #00b4d8;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .house {
+    width: 90%;
+  }
+
+  .form-container,
+  .contact-form {
+    width: 95%;
+  }
+}
+.user-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.user-info button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-info button:hover {
+  background-color: #e04e4e;
+}
+
